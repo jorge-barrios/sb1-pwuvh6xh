@@ -11,7 +11,7 @@ router.post('/', (req, res) => {
       email_id: req.body.email_id,
       from: req.body.from,
       subject: req.body.subject,
-      attachments: Array.isArray(req.body.attachments) ? req.body.attachments : []
+      attachments: typeof req.body.attachments === 'string' ? req.body.attachments.split(',') : []
     };
 
     const validatedData = PrintRequestSchema.parse(printRequest);

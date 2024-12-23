@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { PrintRequest } from '../server/db/schema';
 
-const API_BASE = 'http://localhost:3000';
+const API_BASE = 'https://sparkly-sable-71a503.netlifya.app';
 
 export const api = {
   getPendingRequests: async () => {

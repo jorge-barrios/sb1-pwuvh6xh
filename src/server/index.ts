@@ -5,7 +5,7 @@ import requestsRouter from './routes/requests';
 import decideRouter from './routes/decide';
 
 const app = express();
-const port = 3000;
+const port = 5173;
 
 app.use(cors());
 app.use(express.json());

@@ -42,6 +42,16 @@ function App() {
       
       <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
         <div className="px-4 py-6 sm:px-0">
+          <div className="flex justify-between items-center p-4">
+            <h1 className="text-2xl font-bold">Print Requests</h1>
+            <button
+              onClick={fetchRequests}
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Refresh Requests
+            </button>
+          </div>
+
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center">
               <Printer className="h-8 w-8 text-indigo-600 mr-3" />
@@ -63,3 +73,5 @@ function App() {
     </div>
   );
 }
+
+export default App;
